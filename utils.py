@@ -2,11 +2,14 @@ import copy
 rowNr = 31
 colNr = 38
 
-def init(pygame): 
+def init(pygame, gameGrid): 
     pygame.init()
     pygame.display.set_caption("Conway's Game Of Life")
     win = pygame.display.set_mode((1800, 1800))
-    
+    global rowNr
+    global colNr
+    rowNr = len(gameGrid)
+    colNr = len(gameGrid[0])
     return win
 
 #Recieves list of key presses to check for
