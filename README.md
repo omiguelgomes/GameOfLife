@@ -1,4 +1,8 @@
-Como iniciar o jogo:
+# Pulsar
+<img width="50%" src=https://i.imgur.com/pWpR5De.gif/>
+
+
+## Como iniciar o jogo:
 
 O projeto é feito na linguagem Python. As instruções seguintes assumem que o programa é corrido em Linux.
 Para inicial os seguintes comandos devem ser executados na pasta que contém os ficheiros .py
