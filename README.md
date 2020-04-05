@@ -1,5 +1,6 @@
 # Pulsar
-<img width="50%" src=https://i.imgur.com/pWpR5De.gif/>
+ Example using the project 
+<img width="25%" src=https://i.imgur.com/pWpR5De.gif/>
 
 
 ## Como iniciar o jogo:
