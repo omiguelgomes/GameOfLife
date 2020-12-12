@@ -2,7 +2,7 @@
 
 Simple implementation of Conway's Game of Life, in Python.
 
-Below we have some of the most famous patterns discovered.
+Below we have some of the most famous patterns discovered, running with this project.
 
 # Pulsar
  
