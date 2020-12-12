@@ -8,6 +8,9 @@ Below we have some of the most famous patterns discovered, running with this pro
  
 <img width="25%" src=https://i.imgur.com/pWpR5De.gif/>
 
+# Gosper
+
+<img width="25%" src=https://i.imgur.com/R1W9lhA.gif/>
 
 ## How to start the game:
 
