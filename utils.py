@@ -1,6 +1,14 @@
 import copy
+import pygame
+from patterns import patternDict
+from random import randrange
+
+white = (255, 255, 255)
+black = (0, 0, 0)
 rowNr = 31
 colNr = 38
+cellSize = 50
+
 
 def init(pygame, gameGrid, cellSize): 
     pygame.init()
@@ -62,3 +70,39 @@ def updateGrid(grid):
         for col in range(0, colNr):
             newGrid[row][col] = nextStatus(grid, row, col)
     return newGrid
+
+def updateScreen(gameGrid, win):
+    for row in range (0, rowNr):
+        for col in range(0, colNr):
+            if gameGrid[row][col] == 1:
+                pygame.draw.rect(win, black, pygame.Rect(col*cellSize, row*cellSize, cellSize, cellSize))
+            else:
+                pygame.draw.rect(win, white, pygame.Rect(col*cellSize, row*cellSize, cellSize, cellSize))
+
+    pygame.display.flip()
+
+
+def getUserInput(gameGrid):
+    while (True):
+        print("Which pattern would you like to see?")
+
+        for key in patternDict:
+            print(" - {}".format(key))
+
+        print(" - random")
+        pattern = input("Option: ")
+
+        if pattern in patternDict:
+            gameGrid = patternDict[pattern]
+            return gameGrid
+
+        elif pattern == "random" or pattern == "Random":
+            for i in range(0, 50):
+                gameGrid.append([])
+                for j in range(0, 50):
+                    gameGrid[i].append(randrange(2))
+            return gameGrid
+            
+        else:
+            print("That isn't an available pattern!")
+    
