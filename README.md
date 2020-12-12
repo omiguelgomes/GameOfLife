@@ -1,5 +1,10 @@
+#Conway's Game Of Life
+
+Simple implementation of Conway's Game of Life, in Python.
+
+Below we have some of the most famous patterns discovered.
+
 # Pulsar
- Example using the project 
  
 <img width="25%" src=https://i.imgur.com/pWpR5De.gif/>
 
